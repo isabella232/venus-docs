@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Background | Venus Filecoin</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/assets/venus-logo.png">
+    <meta name="description" content="Venus is a Go implementation of the Filecoin Distributed Storage Network.">
+    
+    <link rel="preload" href="/assets/css/0.styles.117964e0.css" as="style"><link rel="preload" href="/assets/js/app.002e5ed7.js" as="script"><link rel="preload" href="/assets/js/2.fba67755.js" as="script"><link rel="preload" href="/assets/js/43.c4874ec4.js" as="script"><link rel="prefetch" href="/assets/js/10.828ffaa8.js"><link rel="prefetch" href="/assets/js/100.de9c2481.js"><link rel="prefetch" href="/assets/js/101.f40afa81.js"><link rel="prefetch" href="/assets/js/102.f4516aa4.js"><link rel="prefetch" href="/assets/js/103.a9186ff4.js"><link rel="prefetch" href="/assets/js/104.3ea3a793.js"><link rel="prefetch" href="/assets/js/105.08ed7f89.js"><link rel="prefetch" href="/assets/js/106.cba8ab45.js"><link rel="prefetch" href="/assets/js/107.1dbe3a0d.js"><link rel="prefetch" href="/assets/js/108.2d5c9e82.js"><link rel="prefetch" href="/assets/js/109.9741e29d.js"><link rel="prefetch" href="/assets/js/11.8da65fad.js"><link rel="prefetch" href="/assets/js/110.fc2f4c05.js"><link rel="prefetch" href="/assets/js/111.c1e5c32c.js"><link rel="prefetch" href="/assets/js/112.0af42d2d.js"><link rel="prefetch" href="/assets/js/113.c9c61d94.js"><link rel="prefetch" href="/assets/js/114.8f1534c3.js"><link rel="prefetch" href="/assets/js/115.5fc375d1.js"><link rel="prefetch" href="/assets/js/116.a58d9f4d.js"><link rel="prefetch" href="/assets/js/117.7401d71c.js"><link rel="prefetch" href="/assets/js/118.2d3fa413.js"><link rel="prefetch" href="/assets/js/119.912fd1fd.js"><link rel="prefetch" href="/assets/js/12.48206ce0.js"><link rel="prefetch" href="/assets/js/120.dfd82027.js"><link rel="prefetch" href="/assets/js/121.ba977a83.js"><link rel="prefetch" href="/assets/js/122.3c15e503.js"><link rel="prefetch" href="/assets/js/123.5ff2ca89.js"><link rel="prefetch" href="/assets/js/124.3bbb97b5.js"><link rel="prefetch" href="/assets/js/125.81fb5925.js"><link rel="prefetch" href="/assets/js/126.5dfd776a.js"><link rel="prefetch" href="/assets/js/127.2cb568c9.js"><link rel="prefetch" href="/assets/js/128.9489de0b.js"><link rel="prefetch" href="/assets/js/129.95fbf8dd.js"><link rel="prefetch" href="/assets/js/13.1e0cc3f4.js"><link rel="prefetch" href="/assets/js/130.01e0834a.js"><link rel="prefetch" href="/assets/js/131.93e954cc.js"><link rel="prefetch" href="/assets/js/132.f8cd0368.js"><link rel="prefetch" href="/assets/js/133.5bc26a87.js"><link rel="prefetch" href="/assets/js/134.c4ec335d.js"><link rel="prefetch" href="/assets/js/135.de3757f1.js"><link rel="prefetch" href="/assets/js/136.2595707a.js"><link rel="prefetch" href="/assets/js/137.8dbe0b4e.js"><link rel="prefetch" href="/assets/js/138.a13ae543.js"><link rel="prefetch" href="/assets/js/139.f67ab25a.js"><link rel="prefetch" href="/assets/js/14.6fb8eff3.js"><link rel="prefetch" href="/assets/js/140.9bf707fb.js"><link rel="prefetch" href="/assets/js/141.c423a885.js"><link rel="prefetch" href="/assets/js/142.ad167d24.js"><link rel="prefetch" href="/assets/js/143.95b1b669.js"><link rel="prefetch" href="/assets/js/144.2113bf22.js"><link rel="prefetch" href="/assets/js/145.a18c1239.js"><link rel="prefetch" href="/assets/js/146.0cfcffd5.js"><link rel="prefetch" href="/assets/js/147.a99fceef.js"><link rel="prefetch" href="/assets/js/148.f683cc35.js"><link rel="prefetch" href="/assets/js/149.a0e006cc.js"><link rel="prefetch" href="/assets/js/15.666a9b8a.js"><link rel="prefetch" href="/assets/js/150.9f5f520d.js"><link rel="prefetch" href="/assets/js/151.f98f7884.js"><link rel="prefetch" href="/assets/js/152.77db678d.js"><link rel="prefetch" href="/assets/js/153.9cf1e948.js"><link rel="prefetch" href="/assets/js/154.9f4274bf.js"><link rel="prefetch" href="/assets/js/155.f77c8a0a.js"><link rel="prefetch" href="/assets/js/156.fa50bb93.js"><link rel="prefetch" href="/assets/js/157.0154ae05.js"><link rel="prefetch" href="/assets/js/158.b334c843.js"><link rel="prefetch" href="/assets/js/159.112dd95a.js"><link rel="prefetch" href="/assets/js/16.9e460023.js"><link rel="prefetch" href="/assets/js/160.7818c41d.js"><link rel="prefetch" href="/assets/js/161.5553cea2.js"><link rel="prefetch" href="/assets/js/162.1215e624.js"><link rel="prefetch" href="/assets/js/163.df22bee0.js"><link rel="prefetch" href="/assets/js/164.7e74c6b6.js"><link rel="prefetch" href="/assets/js/165.b5d7d468.js"><link rel="prefetch" href="/assets/js/166.68db5f44.js"><link rel="prefetch" href="/assets/js/17.a2025546.js"><link rel="prefetch" href="/assets/js/18.c134adc2.js"><link rel="prefetch" href="/assets/js/19.7fb4d464.js"><link rel="prefetch" href="/assets/js/20.33d92da8.js"><link rel="prefetch" href="/assets/js/21.b89a9afd.js"><link rel="prefetch" href="/assets/js/22.b236eab4.js"><link rel="prefetch" href="/assets/js/23.3d855ddd.js"><link rel="prefetch" href="/assets/js/24.e23a691a.js"><link rel="prefetch" href="/assets/js/25.2a861962.js"><link rel="prefetch" href="/assets/js/26.ba248b7d.js"><link rel="prefetch" href="/assets/js/27.af871f3f.js"><link rel="prefetch" href="/assets/js/28.0ca04d02.js"><link rel="prefetch" href="/assets/js/29.e2355cc5.js"><link rel="prefetch" href="/assets/js/3.ae33af51.js"><link rel="prefetch" href="/assets/js/30.bf0c43a6.js"><link rel="prefetch" href="/assets/js/31.b6ddf1ea.js"><link rel="prefetch" href="/assets/js/32.bae97709.js"><link rel="prefetch" href="/assets/js/33.89ef0b1f.js"><link rel="prefetch" href="/assets/js/34.a34e828e.js"><link rel="prefetch" href="/assets/js/35.9ac5bc50.js"><link rel="prefetch" href="/assets/js/36.9c1f102c.js"><link rel="prefetch" href="/assets/js/37.3916906f.js"><link rel="prefetch" href="/assets/js/38.06421d49.js"><link rel="prefetch" href="/assets/js/39.3529369f.js"><link rel="prefetch" href="/assets/js/4.9f9ba255.js"><link rel="prefetch" href="/assets/js/40.8a9335aa.js"><link rel="prefetch" href="/assets/js/41.47575017.js"><link rel="prefetch" href="/assets/js/42.f75a0042.js"><link rel="prefetch" href="/assets/js/44.bf024202.js"><link rel="prefetch" href="/assets/js/45.d214119e.js"><link rel="prefetch" href="/assets/js/46.e8505851.js"><link rel="prefetch" href="/assets/js/47.c157e6e3.js"><link rel="prefetch" href="/assets/js/48.a707c247.js"><link rel="prefetch" href="/assets/js/49.08b18d60.js"><link rel="prefetch" href="/assets/js/5.2c7ca079.js"><link rel="prefetch" href="/assets/js/50.a25bab09.js"><link rel="prefetch" href="/assets/js/51.b9cee132.js"><link rel="prefetch" href="/assets/js/52.796bdee4.js"><link rel="prefetch" href="/assets/js/53.1bbd6eab.js"><link rel="prefetch" href="/assets/js/54.4d6d6a42.js"><link rel="prefetch" href="/assets/js/55.c34b488d.js"><link rel="prefetch" href="/assets/js/56.fd3bd811.js"><link rel="prefetch" href="/assets/js/57.fa38d548.js"><link rel="prefetch" href="/assets/js/58.6a536c81.js"><link rel="prefetch" href="/assets/js/59.b1f01f48.js"><link rel="prefetch" href="/assets/js/6.21606665.js"><link rel="prefetch" href="/assets/js/60.e0e81d18.js"><link rel="prefetch" href="/assets/js/61.683cf082.js"><link rel="prefetch" href="/assets/js/62.cc2274b8.js"><link rel="prefetch" href="/assets/js/63.1013f22c.js"><link rel="prefetch" href="/assets/js/64.3f8e3342.js"><link rel="prefetch" href="/assets/js/65.7edcd6f0.js"><link rel="prefetch" href="/assets/js/66.c717c15d.js"><link rel="prefetch" href="/assets/js/67.9d478913.js"><link rel="prefetch" href="/assets/js/68.8a0be6d9.js"><link rel="prefetch" href="/assets/js/69.a1d783ba.js"><link rel="prefetch" href="/assets/js/7.dac27fca.js"><link rel="prefetch" href="/assets/js/70.78c95f4a.js"><link rel="prefetch" href="/assets/js/71.4616450d.js"><link rel="prefetch" href="/assets/js/72.17dd1595.js"><link rel="prefetch" href="/assets/js/73.58093a65.js"><link rel="prefetch" href="/assets/js/74.924a19ab.js"><link rel="prefetch" href="/assets/js/75.659d1b15.js"><link rel="prefetch" href="/assets/js/76.e4639db9.js"><link rel="prefetch" href="/assets/js/77.9caefc2b.js"><link rel="prefetch" href="/assets/js/78.d577374f.js"><link rel="prefetch" href="/assets/js/79.872e6186.js"><link rel="prefetch" href="/assets/js/8.8fa735e8.js"><link rel="prefetch" href="/assets/js/80.dca63cb7.js"><link rel="prefetch" href="/assets/js/81.b0f049e7.js"><link rel="prefetch" href="/assets/js/82.d882aad6.js"><link rel="prefetch" href="/assets/js/83.73f27cbd.js"><link rel="prefetch" href="/assets/js/84.04b9b5ce.js"><link rel="prefetch" href="/assets/js/85.0c855f8f.js"><link rel="prefetch" href="/assets/js/86.971ddda2.js"><link rel="prefetch" href="/assets/js/87.0e396898.js"><link rel="prefetch" href="/assets/js/88.034594c2.js"><link rel="prefetch" href="/assets/js/89.58b4515d.js"><link rel="prefetch" href="/assets/js/9.a50194fc.js"><link rel="prefetch" href="/assets/js/90.ca4e2dc5.js"><link rel="prefetch" href="/assets/js/91.dbc3b1e9.js"><link rel="prefetch" href="/assets/js/92.83540607.js"><link rel="prefetch" href="/assets/js/93.2d9e2e0b.js"><link rel="prefetch" href="/assets/js/94.55843a1f.js"><link rel="prefetch" href="/assets/js/95.5b8957e9.js"><link rel="prefetch" href="/assets/js/96.f77fe519.js"><link rel="prefetch" href="/assets/js/97.22b764f3.js"><link rel="prefetch" href="/assets/js/98.da56ff29.js"><link rel="prefetch" href="/assets/js/99.b14a51ad.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.117964e0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/venus-logo-title.svg" alt="Venus Filecoin" class="logo"> <span class="site-name can-hide">Venus Filecoin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Getting Started
+</a></div><div class="nav-item"><a href="/modules/" class="nav-link">
+  Venus Modules
+</a></div><div class="nav-item"><a href="/advanced/" class="nav-link">
+  Advanced
+</a></div><div class="nav-item"><a href="/operation/" class="nav-link">
+  Operation
+</a></div><div class="nav-item"><a href="/master/" class="nav-link">
+  Master
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/Using-venus-cluster.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/guide/Using-venus-cluster.html" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Getting Started
+</a></div><div class="nav-item"><a href="/modules/" class="nav-link">
+  Venus Modules
+</a></div><div class="nav-item"><a href="/advanced/" class="nav-link">
+  Advanced
+</a></div><div class="nav-item"><a href="/operation/" class="nav-link">
+  Operation
+</a></div><div class="nav-item"><a href="/master/" class="nav-link">
+  Master
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/Using-venus-cluster.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/guide/Using-venus-cluster.html" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Getting Started</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/" aria-current="page" class="sidebar-link">Overview</a></li><li><a href="/guide/How-To-Deploy-MingPool.html" class="sidebar-link">Deploy a chain service</a></li><li><a href="/guide/Using-venus-Shared-Modules.html" class="sidebar-link">Use a chain service</a></li><li><a href="/guide/Using-venus-market.html" class="sidebar-link">Join storage market</a></li><li><a href="/guide/Using-venus-cluster-alt.html" class="sidebar-link">Use venus-cluster</a></li><li><a href="/guide/How-To-Contribute-Docs.html" class="sidebar-link">Contribute to doc</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="background"><a href="#background" class="header-anchor">#</a> Background</h2> <p>venus-cluster is next generation of venus-sealer, which is responsible for growth (PoRep) and maintenance (PoSt) storage power in the filecoin network. Compared with venus-sealer, PoSt of the sectors is now handled by venus-worker while the venus-sector-manager sub-module is responsible for interacting with the chain and providing necessary service API interfaces for venus-worker on demand. In the old design, venus-sealer is a central scheduler that all workers need to be registered with. When a sealing task is queued, venus-sealer tries to select the worker with enough available resources to process the task. In the new design, workers in venus-cluster are independent from each other, who handles the entire sealing pipeline till sector is commited on-chain during which RPC calls are made to venus-sector-manager to obtain information such as latest SectorID, ticket and etc.</p> <p>venus-cluster and venus-sealer both have their own merits in sealing. Generally speaking, venus-cluster simplifies the deployment process, and workers can now independently manage the sealing pipeline, reducing cluster complexity while requiring higher hardwares specs for each worker box. Worker deployment of venus-sealer could be more flexible where each worker only manages one or more phases of the sealing pipeline, thus enabling lower hardware spec workers to work togther. However, this may also creates uncertainty in the sealing pipeline. If a problem occurs, it may cause a large amount of sectors being stuck and may require experienced operator to weigh in and figure out exactly which sealing phase has gone wrong.</p> <p>When choosing which venus sealing component to use, you should evaluate based on your own hardware resources and technical capacity. This document mainly introduces the deployment of venus-cluster.</p> <h2 id="deployment"><a href="#deployment" class="header-anchor">#</a> Deployment</h2> <p>When you compile venus-cluster, it will generate binaries of venus-worker, venus-sector-manager and venus-wallet.</p> <ul><li>venus-worker: responsilbe for sector sealing; all sealing phases a sector has to go through will be done in one worker</li> <li>venus-sector-manager: manages windowPost; provides chain services</li> <li>venus-wallet: manages signing services</li></ul> <h2 id="start-venus-wallet"><a href="#start-venus-wallet" class="header-anchor">#</a> Start venus-wallet</h2> <p>Run venus-wallet module in background.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">nohup</span> ./venus-wallet run <span class="token operator">&gt;</span> wallet.log <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Use <code>tail -f wallet.log</code> to monitor wallet log.</p></div> <p>Setup a password for your venus-wallet.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ./venus-wallet setpwd
+Password:******
+Enter Password again:******
+Password <span class="token builtin class-name">set</span> successfully
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>Please keep backups of your password and store them properly or you will lose contorl of your wallet.</p></div> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>When restarting your wallet, manuually unlock your wallet or you wallet won't be able to sign any messages during sealing or other tasks.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ./venus-wallet unlock
+Password:
+</code></pre></div><p>Use <code>--password</code> for auto unlocking after running.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ./venus-wallet run --password
+</code></pre></div><p>Check current state your wallet.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ./venus-wallet lock-state
+wallet state: unlocked
+</code></pre></div></div> <p>Generate owner and worker addresses. (If you don't have an existing miner id)</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ./venus-wallet new bls
+<span class="token operator">&lt;</span>OWNER_ADDRESS<span class="token operator">&gt;</span>
+$ ./venus-wallet new bls
+<span class="token operator">&lt;</span>WORKER_ADDRESS<span class="token operator">&gt;</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>If you are testing on Calibration, you have to fund all your addresses with test coins from faucets. For calibration, use this <a href="https://faucet.calibration.fildev.network/funds.html" target="_blank" rel="noopener noreferrer">faucet<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Use <code>./venus-wallet import</code> command for importing addresses from private keys.</p></div> <p>Change <code>[APIRegisterHub]</code> section of  <code>~/.venus_wallet/config.toml</code> using the credential you get from shared module admin.</p> <div class="language-toml extra-class"><pre class="language-toml"><code><span class="token punctuation">[</span><span class="token table class-name">APIRegisterHub</span><span class="token punctuation">]</span>
+<span class="token key property">RegisterAPI</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;/ip4/&lt;IP_ADDRESS_OF_VENUS_GATEWAY&gt;/tcp/45132&quot;</span><span class="token punctuation">]</span>
+<span class="token key property">Token</span> <span class="token punctuation">=</span> <span class="token string">&quot;&lt;AUTH_TOKEN_FOR_VENUS_WALLET&gt;&quot;</span>
+<span class="token key property">SupportAccounts</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;&lt;ACCOUNT_NAME&gt;&quot;</span><span class="token punctuation">]</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>Make sure above 3 params are correctly set, or connection to venus shared modules will fail.</p></div> <p>Restart venus-wallet so that the changes takes into effect.</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># grep [PID] of venus-wallet process</span>
+$ <span class="token function">ps</span> -ef <span class="token operator">|</span> <span class="token function">grep</span> wallet
+root   <span class="token number">6704</span>  <span class="token number">2.3</span>  <span class="token number">0.0</span> <span class="token number">2361236</span> <span class="token number">43148</span> pts/2   Sl   <span class="token number">17</span>:33   <span class="token number">0</span>:18 ./venus-wallet run
+root   <span class="token number">8029</span>  <span class="token number">0.0</span>  <span class="token number">0.0</span> <span class="token number">112828</span>   <span class="token number">952</span> pts/2    S+   <span class="token number">17</span>:46   <span class="token number">0</span>:00 <span class="token function">grep</span> --color<span class="token operator">=</span>auto venus-wallet
+<span class="token comment"># kill the process and restart</span>
+$ <span class="token function">kill</span> -9 <span class="token punctuation">[</span>PID<span class="token punctuation">]</span>
+$ <span class="token function">nohup</span> ./venus-wallet run <span class="token operator">&gt;</span> wallet.log <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
+</code></pre></div><p>You should see logs close to the following indicating successful connection to <code>venus-gateway</code>.</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token number">2021</span>-07-12T15:14:12.457+0800    INFO    wallet_event    wallet_event/listenevent.go:197 connect to server fcf714b2-eeb6-498b-aafc-5e58eccd9d0f  <span class="token punctuation">{</span><span class="token string">&quot;api hub&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;/ip4/&lt;IP_ADDRESS&gt;/tcp/45132&quot;</span><span class="token punctuation">}</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Using process controll like  <code>systemmd</code> or <code>supervisord</code> is recommended.</p></div> <h2 id="run-venus-sector-manager"><a href="#run-venus-sector-manager" class="header-anchor">#</a> Run venus-sector-manager</h2> <p>Init venus-sector-manager.</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># use --home flag for local data storage, default: ~/.venus-sector-manager</span>
+<span class="token comment"># use --net for network selection, testnetnet, 2k, cali, forcenet, default: mainnet</span>
+$ ./venus-sector-manager --net<span class="token operator">=</span>forcenet daemon init
+</code></pre></div><p>Create initial config file @  <code>~/.venus-sector-manager/sector-manager.cfg</code>.</p> <div class="language-toml extra-class"><pre class="language-toml"><code><span class="token comment"># Default config:</span>
+<span class="token punctuation">[</span><span class="token table class-name">SectorManager</span><span class="token punctuation">]</span>
+<span class="token comment">#  PreFetch = true</span>
+<span class="token comment">#</span>
+<span class="token comment">#  [[SectorManager.Miners]]</span>
+<span class="token comment">#    ID = 10000</span>
+<span class="token comment">#    InitNumber = 0</span>
+<span class="token comment">#    MaxNumber = 10000</span>
+<span class="token comment">#    Disabled = false</span>
+<span class="token comment">#</span>
+<span class="token punctuation">[</span><span class="token table class-name">Commitment</span><span class="token punctuation">]</span>
+<span class="token comment">#  [Commitment.DefaultPolicy]</span>
+<span class="token comment">#    CommitBatchThreshold = 0</span>
+<span class="token comment">#    CommitBatchMaxWait = &quot;0s&quot;</span>
+<span class="token comment">#    CommitCheckInterval = &quot;0s&quot;</span>
+<span class="token comment">#    EnableBatchProCommit = false</span>
+<span class="token comment">#    PreCommitBatchThreshold = 0</span>
+<span class="token comment">#    PreCommitBatchMaxWait = &quot;0s&quot;</span>
+<span class="token comment">#    PreCommitCheckInterval = &quot;0s&quot;</span>
+<span class="token comment">#    EnableBatchPreCommit = false</span>
+<span class="token comment">#    PreCommitGasOverEstimation = 0.0</span>
+<span class="token comment">#    ProCommitGasOverEstimation = 0.0</span>
+<span class="token comment">#    BatchPreCommitGasOverEstimation = 0.0</span>
+<span class="token comment">#    BatchProCommitGasOverEstimation = 0.0</span>
+<span class="token comment">#    MaxPreCommitFeeCap = &quot;&quot;</span>
+<span class="token comment">#    MaxProCommitFeeCap = &quot;&quot;</span>
+<span class="token comment">#    MaxBatchPreCommitFeeCap = &quot;&quot;</span>
+<span class="token comment">#    MaxBatchProCommitFeeCap = &quot;&quot;</span>
+<span class="token comment">#    MsgConfidence = 0</span>
+<span class="token comment">#  [Commitment.Miners]</span>
+<span class="token comment">#    [Commitment.Miners.example]</span>
+<span class="token comment">#      [Commitment.Miners.example.Controls]</span>
+<span class="token comment">#        PreCommit = &quot;&quot;</span>
+<span class="token comment">#        ProveCommit = &quot;&quot;</span>
+<span class="token comment">#</span>
+<span class="token punctuation">[</span><span class="token table class-name">Chain</span><span class="token punctuation">]</span>
+<span class="token comment">#  Api = &quot;&quot;</span>
+<span class="token comment">#  Token = &quot;&quot;</span>
+<span class="token comment">#</span>
+<span class="token punctuation">[</span><span class="token table class-name">Messager</span><span class="token punctuation">]</span>
+<span class="token comment">#  Api = &quot;&quot;</span>
+<span class="token comment">#  Token = &quot;&quot;</span>
+<span class="token comment">#</span>
+<span class="token punctuation">[</span><span class="token table class-name">PersistedStore</span><span class="token punctuation">]</span>
+<span class="token comment">#  Includes = [&quot;unavailable&quot;]</span>
+<span class="token comment">#</span>
+<span class="token comment">#  [[PersistedStore.Stores]]</span>
+<span class="token comment">#    Name = &quot;storage name,like `100.100.10.1`&quot;</span>
+<span class="token comment">#    Path = &quot;/path/to/storage/&quot;</span>
+<span class="token comment">#    Strict = false</span>
+<span class="token comment">#    ReadOnly = true</span>
+<span class="token comment">#</span>
+<span class="token punctuation">[</span><span class="token table class-name">PoSt</span><span class="token punctuation">]</span>
+<span class="token comment">#  [PoSt.Default]</span>
+<span class="token comment">#    StrictCheck = false</span>
+<span class="token comment">#    GasOverEstimation = 0.0</span>
+<span class="token comment">#    MaxFeeCap = &quot;&quot;</span>
+<span class="token comment">#    MsgCheckInteval = &quot;1m0s&quot;</span>
+<span class="token comment">#    MsgConfidence = 5</span>
+<span class="token comment">#  [PoSt.Actors]</span>
+<span class="token comment">#    [PoSt.Actors.10000]</span>
+<span class="token comment">#      Sender = &quot;t1abjxfbp274xpdqcpuaykwkfb43omjotacm2p3za&quot;</span>
+<span class="token comment">#      StrictCheck = false</span>
+<span class="token comment">#      GasOverEstimation = 0.0</span>
+<span class="token comment">#      MaxFeeCap = &quot;&quot;</span>
+<span class="token comment">#      MsgCheckInteval = &quot;1m0s&quot;</span>
+<span class="token comment">#      MsgConfidence = 5</span>
+</code></pre></div><p>Add configurations for chain services in <code>sector-manager.cfg</code> too.</p> <div class="language-toml extra-class"><pre class="language-toml"><code><span class="token punctuation">[</span><span class="token table class-name">Chain</span><span class="token punctuation">]</span>
+  <span class="token key property">Api</span> <span class="token punctuation">=</span> <span class="token string">&quot;/ip4/&lt;IP_ADDRESS_OF_VENUS&gt;/tcp/&lt;PORT_OF_VENUS&gt;&quot;</span>
+  <span class="token key property">Token</span> <span class="token punctuation">=</span> <span class="token string">&quot;AUTH_TOKEN_FOR_ACCOUNT_NAME&quot;</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">Messager</span><span class="token punctuation">]</span>
+  <span class="token key property">Api</span> <span class="token punctuation">=</span> <span class="token string">&quot;/ip4/&lt;IP_ADDRESS_OF_VENUS_MESSAGER&gt;/tcp/&lt;PORT_OF_VENUS_MESSAGER&gt;&quot;</span>
+  <span class="token key property">Token</span> <span class="token punctuation">=</span> <span class="token string">&quot;AUTH_TOKEN_FOR_ACCOUNT_NAME&quot;</span>
+</code></pre></div><h3 id="init-a-new-miner-id-optinal-if-you-already-have-one"><a href="#init-a-new-miner-id-optinal-if-you-already-have-one" class="header-anchor">#</a> Init a new miner id (optinal if you already have one)</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ./venus-sector-manager --net<span class="token operator">=</span>forcenet util miner create --from<span class="token operator">=</span>t3skelnvntu5m7kb656jfvr5dfy663aru76c6pxqp4qf6madrm7s4db77ysasefohdjypmoumc3niug6xmcxuq --sector-size<span class="token operator">=</span>512MiB 
+<span class="token number">2021</span>-09-28T16:11:20.168+0800    DEBUG   policy  policy/const.go:18      NETWORK SETUP   <span class="token punctuation">{</span><span class="token string">&quot;name&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;forcenet&quot;</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:11:20.185+0800    INFO    sealer  internal/util_miner.go:250      <span class="token function">wait</span> <span class="token keyword">for</span> message receipt        <span class="token punctuation">{</span><span class="token string">&quot;size&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;512MiB&quot;</span>, <span class="token string">&quot;from&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t3skelnvntu5m7kb656jfvr5dfy663aru76c6pxqp4qf6madrm7s4db77ysasefohdjypmoumc3niug6xmcxuq&quot;</span>, <span class="token string">&quot;actor&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t01032&quot;</span>, <span class="token string">&quot;mid&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;bafy2bzaceb66tlt744zjrq6bvtziinlsi7vajlyux6t3rnzxx4sfjeupxliha&quot;</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:11:50.189+0800    INFO    sealer  internal/util_miner.go:268      msg state: FillMsg      <span class="token punctuation">{</span><span class="token string">&quot;size&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;512MiB&quot;</span>, <span class="token string">&quot;from&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t3skelnvntu5m7kb656jfvr5dfy663aru76c6pxqp4qf6madrm7s4db77ysasefohdjypmoumc3niug6xmcxuq&quot;</span>, <span class="token string">&quot;actor&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t01032&quot;</span>, <span class="token string">&quot;mid&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;bafy2bzaceb66tlt744zjrq6bvtziinlsi7vajlyux6t3rnzxx4sfjeupxliha&quot;</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:11:50.189+0800    INFO    sealer  internal/util_miner.go:250      <span class="token function">wait</span> <span class="token keyword">for</span> message receipt        <span class="token punctuation">{</span><span class="token string">&quot;size&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;512MiB&quot;</span>, <span class="token string">&quot;from&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t3skelnvntu5m7kb656jfvr5dfy663aru76c6pxqp4qf6madrm7s4db77ysasefohdjypmoumc3niug6xmcxuq&quot;</span>, <span class="token string">&quot;actor&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t01032&quot;</span>, <span class="token string">&quot;mid&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;bafy2bzaceb66tlt744zjrq6bvtziinlsi7vajlyux6t3rnzxx4sfjeupxliha&quot;</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:12:20.192+0800    INFO    sealer  internal/util_miner.go:268      msg state: FillMsg      <span class="token punctuation">{</span><span class="token string">&quot;size&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;512MiB&quot;</span>, <span class="token string">&quot;from&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t3skelnvntu5m7kb656jfvr5dfy663aru76c6pxqp4qf6madrm7s4db77ysasefohdjypmoumc3niug6xmcxuq&quot;</span>, <span class="token string">&quot;actor&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t01032&quot;</span>, <span class="token string">&quot;mid&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;bafy2bzaceb66tlt744zjrq6bvtziinlsi7vajlyux6t3rnzxx4sfjeupxliha&quot;</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:12:20.192+0800    INFO    sealer  internal/util_miner.go:250      <span class="token function">wait</span> <span class="token keyword">for</span> message receipt        <span class="token punctuation">{</span><span class="token string">&quot;size&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;512MiB&quot;</span>, <span class="token string">&quot;from&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t3skelnvntu5m7kb656jfvr5dfy663aru76c6pxqp4qf6madrm7s4db77ysasefohdjypmoumc3niug6xmcxuq&quot;</span>, <span class="token string">&quot;actor&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t01032&quot;</span>, <span class="token string">&quot;mid&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;bafy2bzaceb66tlt744zjrq6bvtziinlsi7vajlyux6t3rnzxx4sfjeupxliha&quot;</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:12:50.195+0800    INFO    sealer  internal/util_miner.go:274      message landed on chain <span class="token punctuation">{</span><span class="token string">&quot;size&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;512MiB&quot;</span>, <span class="token string">&quot;from&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t3skelnvntu5m7kb656jfvr5dfy663aru76c6pxqp4qf6madrm7s4db77ysasefohdjypmoumc3niug6xmcxuq&quot;</span>, <span class="token string">&quot;actor&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t01032&quot;</span>, <span class="token string">&quot;mid&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;bafy2bzaceb66tlt744zjrq6bvtziinlsi7vajlyux6t3rnzxx4sfjeupxliha&quot;</span>, <span class="token string">&quot;smcid&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;bafy2bzacecejxxqdtzyyrivhc2h4pqjdfr43dwlwbbtd7kxzbbiixzmsl6k52&quot;</span>, <span class="token string">&quot;height&quot;</span><span class="token builtin class-name">:</span> <span class="token number">92099</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:12:50.195+0800    INFO    sealer  internal/util_miner.go:285      miner actor: t01033 <span class="token punctuation">(</span>t2sqliwznayjwcjke6ypex3ox5lajcwpasg7wc2fi<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token string">&quot;size&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;512MiB&quot;</span>, <span class="token string">&quot;from&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t3skelnvntu5m7kb656jfvr5dfy663aru76c6pxqp4qf6madrm7s4db77ysasefohdjypmoumc3niug6xmcxuq&quot;</span>, <span class="token string">&quot;actor&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;t01032&quot;</span>, <span class="token string">&quot;mid&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;bafy2bzaceb66tlt744zjrq6bvtziinlsi7vajlyux6t3rnzxx4sfjeupxliha&quot;</span>, <span class="token string">&quot;smcid&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;bafy2bzacecejxxqdtzyyrivhc2h4pqjdfr43dwlwbbtd7kxzbbiixzmsl6k52&quot;</span>, <span class="token string">&quot;height&quot;</span><span class="token builtin class-name">:</span> <span class="token number">92099</span><span class="token punctuation">}</span>
+</code></pre></div><p>Get miner id from above log. Check miner information.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ./venus-sector-manager --net<span class="token operator">=</span>forcenet util miner info t01033
+<span class="token number">2021</span>-09-28T16:19:19.236+0800    DEBUG   policy  policy/const.go:18      NETWORK SETUP   <span class="token punctuation">{</span><span class="token string">&quot;name&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;forcenet&quot;</span><span class="token punctuation">}</span>
+Miner: t01033
+Owner: t01032
+Worker: t01032
+NewWorker: <span class="token operator">&lt;</span>empty<span class="token operator">&gt;</span>
+Controls<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>:
+WokerChangeEpoch: -1
+Multiaddrs<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>:
+SectorSize: <span class="token number">536870912</span>
+WindowPoStPartitionSectors: <span class="token number">2</span>
+</code></pre></div><h3 id="start-daemon"><a href="#start-daemon" class="header-anchor">#</a> Start daemon</h3> <p>Before starting daemon, couple more configurations need to be done. Miner id and sector id.</p> <div class="language-toml extra-class"><pre class="language-toml"><code><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">SectorManager.Miners</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token key property">ID</span> <span class="token punctuation">=</span> <span class="token number">1033</span> <span class="token comment"># miner id, ex, t01033 -&gt; 1033 (leave out &quot;t&quot; and &quot;f&quot;)</span>
+    <span class="token key property">InitNumber</span> <span class="token punctuation">=</span> <span class="token number">0</span> <span class="token comment"># min sid </span>
+    <span class="token key property">MaxNumber</span> <span class="token punctuation">=</span> <span class="token number">10000</span> <span class="token comment"># max sid</span>
+    <span class="token key property">Disabled</span> <span class="token punctuation">=</span> <span class="token boolean">false</span> <span class="token comment"># false: allow sealing; true: maintenance only (windowPost)</span>
+</code></pre></div><p>Addresses for P2 and C2.</p> <div class="language-toml extra-class"><pre class="language-toml"><code><span class="token punctuation">[</span><span class="token table class-name">Commitment.Miners</span><span class="token punctuation">]</span>
+    <span class="token punctuation">[</span><span class="token table class-name">Commitment.Miners.1033</span><span class="token punctuation">]</span>
+      <span class="token punctuation">[</span><span class="token table class-name">Commitment.Miners.1033.Controls</span><span class="token punctuation">]</span>
+        <span class="token key property">PreCommit</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span> <span class="token comment"># Your choice of address</span>
+        <span class="token key property">ProveCommit</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span> <span class="token comment"># Your choice of address</span>
+</code></pre></div><p>Persisted store path.</p> <div class="language-toml extra-class"><pre class="language-toml"><code><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">PersistedStore.Stores</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token key property">Name</span> <span class="token punctuation">=</span> <span class="token string">&quot;store-f01033&quot;</span> <span class="token comment"># name of your choice</span>
+    <span class="token key property">Path</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>  <span class="token comment"># Absolute path </span>
+</code></pre></div><p>WindowPost address.</p> <div class="language-toml extra-class"><pre class="language-toml"><code><span class="token punctuation">[</span><span class="token table class-name">PoSt.Actors</span><span class="token punctuation">]</span>
+    <span class="token punctuation">[</span><span class="token table class-name">PoSt.Actors.1033</span><span class="token punctuation">]</span>
+      <span class="token key property">Sender</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span> <span class="token comment"># Your choice of address</span>
+</code></pre></div><p>Make sure the above configurations are correctly set and start daemon.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>
+$ <span class="token function">nohup</span> ./venus-sector-manager daemon run --listen<span class="token operator">=</span><span class="token number">0.0</span>.0.0:1789 --poster<span class="token operator">=</span>true <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&gt;</span> manager.log <span class="token operator">&amp;</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Use <code>--poster</code> flag for enabling and disabling windowPost for this daemon process</p></div> <p>First run will print configurations to the log.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>021-09-28T16:51:03.850+0800    INFO    dep     dep/sealer_constructor.go:69    Sector-manager initial cfg: <span class="token punctuation">[</span>SectorManager<span class="token punctuation">]</span>
+  PreFetch <span class="token operator">=</span> <span class="token boolean">true</span>
+
+  <span class="token punctuation">[</span><span class="token punctuation">[</span>SectorManager.Miners<span class="token punctuation">]</span><span class="token punctuation">]</span>
+    ID <span class="token operator">=</span> <span class="token number">1033</span>
+    InitNumber <span class="token operator">=</span> <span class="token number">0</span>
+    MaxNumber <span class="token operator">=</span> <span class="token number">10000</span>
+    Disabled <span class="token operator">=</span> <span class="token boolean">false</span>
+
+<span class="token punctuation">[</span>Commitment<span class="token punctuation">]</span>
+  <span class="token punctuation">[</span>Commitment.DefaultPolicy<span class="token punctuation">]</span>
+    CommitBatchThreshold <span class="token operator">=</span> <span class="token number">0</span>
+    CommitBatchMaxWait <span class="token operator">=</span> <span class="token string">&quot;0s&quot;</span>
+    CommitCheckInterval <span class="token operator">=</span> <span class="token string">&quot;0s&quot;</span>
+    EnableBatchProCommit <span class="token operator">=</span> <span class="token boolean">false</span>
+    PreCommitBatchThreshold <span class="token operator">=</span> <span class="token number">0</span>
+    PreCommitBatchMaxWait <span class="token operator">=</span> <span class="token string">&quot;0s&quot;</span>
+    PreCommitCheckInterval <span class="token operator">=</span> <span class="token string">&quot;0s&quot;</span>
+    EnableBatchPreCommit <span class="token operator">=</span> <span class="token boolean">false</span>
+    PreCommitGasOverEstimation <span class="token operator">=</span> <span class="token number">0.0</span>
+    ProCommitGasOverEstimation <span class="token operator">=</span> <span class="token number">0.0</span>
+    BatchPreCommitGasOverEstimation <span class="token operator">=</span> <span class="token number">0.0</span>
+    BatchProCommitGasOverEstimation <span class="token operator">=</span> <span class="token number">0.0</span>
+    MaxPreCommitFeeCap <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+    MaxProCommitFeeCap <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+    MaxBatchPreCommitFeeCap <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+    MaxBatchProCommitFeeCap <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+    MsgConfidence <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token punctuation">[</span>Commitment.Miners<span class="token punctuation">]</span>
+    <span class="token punctuation">[</span>Commitment.Miners.1033<span class="token punctuation">]</span>
+      <span class="token punctuation">[</span>Commitment.Miners.1033.Controls<span class="token punctuation">]</span>
+        PreCommit <span class="token operator">=</span> <span class="token string">&quot;t3skelnvntu5m7kb656jfvr5dfy663aru76c6pxqp4qf6madrm7s4db77ysasefohdjypmoumc3niug6xmcxuq&quot;</span>
+        ProveCommit <span class="token operator">=</span> <span class="token string">&quot;t3skelnvntu5m7kb656jfvr5dfy663aru76c6pxqp4qf6madrm7s4db77ysasefohdjypmoumc3niug6xmcxuq&quot;</span>
+    <span class="token punctuation">[</span>Commitment.Miners.example<span class="token punctuation">]</span>
+      <span class="token punctuation">[</span>Commitment.Miners.example.Controls<span class="token punctuation">]</span>
+        PreCommit <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+        ProveCommit <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+
+<span class="token punctuation">[</span>Chain<span class="token punctuation">]</span>
+  Api <span class="token operator">=</span> <span class="token string">&quot;/ip4/192.168.200.12/tcp/3453&quot;</span>
+  Token <span class="token operator">=</span> <span class="token string">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGl0YW8wNCIsInBlcm0iOiJzaWduIiwiZXh0IjoiIn0.rezCJILQkXw0hZrCYdyVVX_dB2ZqqlXWCk4izAqnld8&quot;</span>
+
+<span class="token punctuation">[</span>Messager<span class="token punctuation">]</span>
+  Api <span class="token operator">=</span> <span class="token string">&quot;/ip4/192.168.200.12/tcp/39812&quot;</span>
+  Token <span class="token operator">=</span> <span class="token string">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGl0YW8wNCIsInBlcm0iOiJzaWduIiwiZXh0IjoiIn0.rezCJILQkXw0hZrCYdyVVX_dB2ZqqlXWCk4izAqnld8&quot;</span>
+
+<span class="token punctuation">[</span>PersistedStore<span class="token punctuation">]</span>
+  Includes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+  <span class="token punctuation">[</span><span class="token punctuation">[</span>PersistedStore.Stores<span class="token punctuation">]</span><span class="token punctuation">]</span>
+    Name <span class="token operator">=</span> <span class="token string">&quot;store-f01033&quot;</span>
+    Path <span class="token operator">=</span> <span class="token string">&quot;/mnt/test&quot;</span>
+    Strict <span class="token operator">=</span> <span class="token boolean">false</span>
+    ReadOnly <span class="token operator">=</span> <span class="token boolean">false</span>
+
+<span class="token punctuation">[</span>PoSt<span class="token punctuation">]</span>
+  <span class="token punctuation">[</span>PoSt.Default<span class="token punctuation">]</span>
+    StrictCheck <span class="token operator">=</span> <span class="token boolean">false</span>
+    GasOverEstimation <span class="token operator">=</span> <span class="token number">0.0</span>
+    MaxFeeCap <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+    MsgCheckInteval <span class="token operator">=</span> <span class="token string">&quot;1m0s&quot;</span>
+    MsgConfidence <span class="token operator">=</span> <span class="token number">5</span>
+  <span class="token punctuation">[</span>PoSt.Actors<span class="token punctuation">]</span>
+    <span class="token punctuation">[</span>PoSt.Actors.1033<span class="token punctuation">]</span>
+      Sender <span class="token operator">=</span> <span class="token string">&quot;t3skelnvntu5m7kb656jfvr5dfy663aru76c6pxqp4qf6madrm7s4db77ysasefohdjypmoumc3niug6xmcxuq&quot;</span>
+
+
+<span class="token number">2021</span>-09-28T16:51:03.859+0800    INFO    badger  v2@v2.2007.2/logger.go:46       All <span class="token number">0</span> tables opened <span class="token keyword">in</span> 0s
+        <span class="token punctuation">{</span><span class="token string">&quot;path&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;/home/ipfs/.venus-sector-manager/meta&quot;</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:51:03.860+0800    DEBUG   kv      kvstore/prefix_wrapper.go:26    kv wrapped      <span class="token punctuation">{</span><span class="token string">&quot;prefix&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;sector-number/&quot;</span>, <span class="token string">&quot;prefix-len&quot;</span><span class="token builtin class-name">:</span> <span class="token number">14</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:51:03.863+0800    INFO    badger  v2@v2.2007.2/logger.go:46       All <span class="token number">0</span> tables opened <span class="token keyword">in</span> 0s
+        <span class="token punctuation">{</span><span class="token string">&quot;path&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;/home/ipfs/.venus-sector-manager/offline_meta&quot;</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:51:03.863+0800    DEBUG   kv      kvstore/prefix_wrapper.go:26    kv wrapped      <span class="token punctuation">{</span><span class="token string">&quot;prefix&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;sector-states/&quot;</span>, <span class="token string">&quot;prefix-len&quot;</span><span class="token builtin class-name">:</span> <span class="token number">14</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:51:03.863+0800    DEBUG   kv      kvstore/prefix_wrapper.go:26    kv wrapped      <span class="token punctuation">{</span><span class="token string">&quot;prefix&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;sector-states-offline/&quot;</span>, <span class="token string">&quot;prefix-len&quot;</span><span class="token builtin class-name">:</span> <span class="token number">22</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:51:03.870+0800    INFO    badger  v2@v2.2007.2/logger.go:46       All <span class="token number">0</span> tables opened <span class="token keyword">in</span> 0s
+        <span class="token punctuation">{</span><span class="token string">&quot;path&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;/home/ipfs/.venus-sector-manager/sector-index&quot;</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:51:03.872+0800    INFO    confmgr confmgr/local_mgr.go:133        will reload sector-manager<span class="token punctuation">(</span>/home/ipfs/.venus-sector-manager/sector-manager.cfg<span class="token punctuation">)</span> once receive reload sig
+<span class="token number">2021</span>-09-28T16:51:03.872+0800    INFO    confmgr confmgr/local_mgr.go:49 <span class="token builtin class-name">local</span> conf mgr start
+<span class="token number">2021</span>-09-28T16:51:03.874+0800    INFO    dep     dep/sealer_constructor.go:215   miner info pre-fetched  <span class="token punctuation">{</span><span class="token string">&quot;miner&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;1033&quot;</span><span class="token punctuation">}</span>
+<span class="token number">2021</span>-09-28T16:51:03.874+0800    INFO    sealer  venus-sector-manager/server.go:38       daemon running
+<span class="token number">2021</span>-09-28T16:51:03.874+0800    INFO    sealer  venus-sector-manager/server.go:31       trying to listen on <span class="token number">0.0</span>.0.0:1789
+</code></pre></div><h2 id="run-venus-worker"><a href="#run-venus-worker" class="header-anchor">#</a> Run venus-worker</h2> <h3 id="cgroup-optional"><a href="#cgroup-optional" class="header-anchor">#</a> cgroup (optional)</h3> <p>Since venus-worker allows users to do sealing in the form of sub-processes, and manage these sub-processes through cgroup, it is necessary to execute the following commands to obtain the relevant operation permissions of the cgroup.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ./create-cgroup.sh
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Note that this script will assign the execution permissions of the current user to a specific cgroup resource group. This means that if the user intends to start the venus-cluster with another user, it needs to switch to the target user before executing the script.</p></div> <h3 id="config-seal-storage"><a href="#config-seal-storage" class="header-anchor">#</a> Config seal storage</h3> <p>Seal storage will be storing cache files during sealing process. By design, venus-worker will match computation resources to storage resources on demand while keeping sectors intact from each other.</p> <p>Format seal storage. Muliple path can be configured. Each corresponds to a sector. For example, if <code>&lt;path/to/local/store1&gt;</code> is created then all cache files of this sector will be stored under this path.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ./venus-worker store seal-init -l <span class="token punctuation">[</span><span class="token operator">&lt;</span>path/to/local/store<span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span> <span class="token operator">&lt;</span>path/to/local/store<span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> <span class="token operator">&lt;</span>path/to/local/store<span class="token operator"><span class="token file-descriptor important">3</span>&gt;</span><span class="token punctuation">]</span>
+</code></pre></div><p>Once formatted, folder structure will resemble the following.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ls</span> -al seal/
+total <span class="token number">16</span>
+drwxrwxr-x <span class="token number">4</span> ipfs ipfs <span class="token number">4096</span> Sep <span class="token number">28</span> <span class="token number">17</span>:10 <span class="token builtin class-name">.</span>
+drwxr-xr-x <span class="token number">8</span> ipfs ipfs <span class="token number">4096</span> Sep <span class="token number">28</span> <span class="token number">17</span>:04 <span class="token punctuation">..</span>
+drwxrwxr-x <span class="token number">4</span> ipfs ipfs <span class="token number">4096</span> Sep <span class="token number">28</span> <span class="token number">17</span>:10 seal_01
+drwxrwxr-x <span class="token number">4</span> ipfs ipfs <span class="token number">4096</span> Sep <span class="token number">28</span> <span class="token number">17</span>:10 seal_02
+
+$ <span class="token function">ls</span> -al seal/seal_01
+total <span class="token number">16</span>
+drwxrwxr-x <span class="token number">4</span> ipfs ipfs <span class="token number">4096</span> Sep <span class="token number">28</span> <span class="token number">17</span>:10 <span class="token builtin class-name">.</span>
+drwxrwxr-x <span class="token number">4</span> ipfs ipfs <span class="token number">4096</span> Sep <span class="token number">28</span> <span class="token number">17</span>:10 <span class="token punctuation">..</span>
+drwxrwxr-x <span class="token number">2</span> ipfs ipfs <span class="token number">4096</span> Sep <span class="token number">28</span> <span class="token number">17</span>:10 data
+-rw-rw-r-- <span class="token number">1</span> ipfs ipfs    <span class="token number">0</span> Sep <span class="token number">28</span> <span class="token number">17</span>:10 .holder
+drwxrwxr-x <span class="token number">2</span> ipfs ipfs <span class="token number">4096</span> Sep <span class="token number">28</span> <span class="token number">17</span>:10 meta
+</code></pre></div><h3 id="config-permanent-storage"><a href="#config-permanent-storage" class="header-anchor">#</a> Config permanent storage</h3> <p>Configure permanent storage path for sealed sectors. Mount your remote storage solution and format the it to prevent losing the mount.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ./venus-worker store file-init -l <span class="token operator">&lt;</span>path/to/remote/store<span class="token operator">&gt;</span>
+</code></pre></div><p>Remote storage should look like the following after execution.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ls</span> -al <span class="token operator">&lt;</span>path/to/remote/store<span class="token operator">&gt;</span>
+total <span class="token number">8</span>
+drwxrwxrwx <span class="token number">2</span> ipfs ipfs <span class="token number">4096</span> Sep <span class="token number">28</span> <span class="token number">17</span>:12 <span class="token builtin class-name">.</span>
+drwxr-xr-x <span class="token number">3</span> root root <span class="token number">4096</span> Sep <span class="token number">28</span> <span class="token number">16</span>:26 <span class="token punctuation">..</span>
+-rw-rw-r-- <span class="token number">1</span> ipfs ipfs    <span class="token number">0</span> Sep <span class="token number">28</span> <span class="token number">17</span>:12 .holder
+</code></pre></div><h3 id="configurations"><a href="#configurations" class="header-anchor">#</a> Configurations</h3> <p>Toml style config file.</p> <div class="language-toml extra-class"><pre class="language-toml"><code><span class="token comment"># venus-sector-manager API</span>
+<span class="token punctuation">[</span><span class="token table class-name">sealer_rpc</span><span class="token punctuation">]</span>
+<span class="token key property">url</span> <span class="token punctuation">=</span> <span class="token string">&quot;ws://127.0.0.1:1789/rpc/v0&quot;</span>
+
+<span class="token comment"># sealing related config</span>
+<span class="token punctuation">[</span><span class="token table class-name">sealing</span><span class="token punctuation">]</span>
+<span class="token comment"># allow deals?</span>
+<span class="token key property">enable_deals</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+<span class="token comment"># when sealing fails, how many times to retry before giving up</span>
+<span class="token key property">max_retries</span> <span class="token punctuation">=</span> <span class="token number">3</span>
+
+<span class="token comment"># path to local storage</span>
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">store</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token key property">location</span> <span class="token punctuation">=</span> <span class="token string">&quot;&lt;path/to/local/store1&gt;&quot;</span>
+
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">store</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token key property">location</span> <span class="token punctuation">=</span> <span class="token string">&quot;&lt;path/to/local/store2&gt;&quot;</span>
+
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">store</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token key property">location</span> <span class="token punctuation">=</span> <span class="token string">&quot;&lt;path/to/local/store3&gt;&quot;</span>
+
+<span class="token comment"># number of parallel tasks for each phase</span>
+<span class="token punctuation">[</span><span class="token table class-name">limit</span><span class="token punctuation">]</span>
+<span class="token comment"># number of PC1 in parallel</span>
+<span class="token comment"># pc1 = 1</span>
+<span class="token key property">pc2</span> <span class="token punctuation">=</span> <span class="token number">1</span>
+<span class="token key property">c2</span> <span class="token punctuation">=</span> <span class="token number">1</span>
+
+<span class="token comment"># path to remote permanent storage</span>
+<span class="token punctuation">[</span><span class="token table class-name">remote</span><span class="token punctuation">]</span>
+<span class="token key property">path</span> <span class="token punctuation">=</span> <span class="token string">&quot;&lt;path/to/remote/store&gt;&quot;</span>
+
+<span class="token comment"># C2 sub processes related</span>
+<span class="token punctuation">[</span><span class="token table class-name">processors.pc2</span><span class="token punctuation">]</span>
+<span class="token comment"># sub processes</span>
+<span class="token key property">external</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+<span class="token comment"># [[processors.pc2.subs]]</span>
+<span class="token comment"># [processors.pc2.subs.cgroup]</span>
+<span class="token comment"># cpuset = &quot;24-27&quot;</span>
+
+<span class="token comment"># [[processors.pc2.subs]]</span>
+<span class="token comment"># [processors.pc2.subs.cgroup]</span>
+<span class="token comment"># cpuset = &quot;28-31&quot;</span>
+
+<span class="token comment"># C2 sub processes related</span>
+<span class="token punctuation">[</span><span class="token table class-name">processors.c2</span><span class="token punctuation">]</span>
+<span class="token comment"># sub processes</span>
+<span class="token key property">external</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+<span class="token comment"># proceessors can be used by sub process, optional if you haven't set cgroup previously</span>
+<span class="token comment"># [[processors.c2.subs]]</span>
+<span class="token comment"># [processors.c2.subs.cgroup]</span>
+<span class="token comment"># cpuset = &quot;32-47&quot;</span>
+</code></pre></div><p>Start worker.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token assign-left variable">RUST_LOG</span><span class="token operator">=</span>debug <span class="token assign-left variable">TMPDIR</span><span class="token operator">=</span>./ <span class="token function">nohup</span> ./venus-worker daemon --config<span class="token operator">=</span>./venus-worker.toml <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&gt;</span> worker.log <span class="token operator">&amp;</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/filecoin-project/venus-docs/edit/master/docs/guide/Using-venus-cluster.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/17/2021, 11:28:12 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.002e5ed7.js" defer></script><script src="/assets/js/2.fba67755.js" defer></script><script src="/assets/js/43.c4874ec4.js" defer></script>
+  </body>
+</html>
